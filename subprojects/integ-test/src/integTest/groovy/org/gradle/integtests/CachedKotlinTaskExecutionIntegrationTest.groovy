@@ -24,9 +24,8 @@ import org.gradle.util.Requires
 import spock.lang.IgnoreIf
 
 import static org.gradle.util.TestPrecondition.KOTLIN_SCRIPT
-import static org.gradle.util.TestPrecondition.NOT_WINDOWS
 
-@Requires([KOTLIN_SCRIPT, NOT_WINDOWS])
+@Requires([KOTLIN_SCRIPT])
 class CachedKotlinTaskExecutionIntegrationTest extends AbstractIntegrationSpec implements DirectoryBuildCacheFixture {
 
     @Override
